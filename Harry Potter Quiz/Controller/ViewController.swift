@@ -39,10 +39,10 @@ class ViewController: UIViewController {
     
     @IBAction func answerPressed(_ sender: UIButton) {
         if sender.tag == selectedAnswer {
-            print("correct")
+            ProgressHUD.showSuccess("Correct 😒")
             score += 1
         } else {
-            print("wrong")
+            ProgressHUD.showSuccess("Wrong answer. Good Job 😜")
         }
         
         questionNumber += 1
