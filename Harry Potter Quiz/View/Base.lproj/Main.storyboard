@@ -65,6 +65,7 @@
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-oe-EXA" userLabel="QImage">
                                                 <rect key="frame" x="20" y="38" width="335" height="185"/>
+                                                <color key="backgroundColor" red="0.0039260786802030045" green="0.0039260786802030045" blue="0.0039260786802030045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="185" id="DV9-rY-hDA"/>
                                                 </constraints>

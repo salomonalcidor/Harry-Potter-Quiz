@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             ProgressHUD.showSuccess("Correct 😒")
             score += 1
         } else {
-            ProgressHUD.showSuccess("Wrong answer. Good Job 😜")
+            ProgressHUD.showError("Wrong answer. Good Job 😜")
         }
         
         questionNumber += 1
