@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Harry_Potter_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCL-fY-giu" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-0d-IHn" userLabel="ProgressBar">
+                                        <rect key="frame" x="0.0" y="67" width="15" height="13"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.65091421469999999" green="0.68334977119999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX / 25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-vO-ADL">
+                                        <rect key="frame" x="24" y="29" width="57" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.25767130656422754" green="0.011429207332829663" blue="0.69360723350253806" alpha="0.82329837328767119" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ark-ru-11S">
+                                        <rect key="frame" x="266" y="27" width="94" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" red="0.25767130659999998" green="0.01142920733" blue="0.69360723349999998" alpha="0.8232983733" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.76862745098039209" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="2jG-gp-Sof"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5q7-SY-lOQ">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3T-Tt-U73" userLabel="QuestionView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="293.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix3-Ou-wRf" userLabel="Question">
+                                                <rect key="frame" x="15" y="244" width="345" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-oe-EXA" userLabel="QImage">
+                                                <rect key="frame" x="20" y="38" width="335" height="185"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="185" id="DV9-rY-hDA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66946193844076318" green="0.90345971225174637" blue="0.98055981228194256" alpha="0.2400470890410959" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hIM-oe-EXA" firstAttribute="leading" secondItem="e3T-Tt-U73" secondAttribute="leading" constant="20" id="2W5-Oz-f0j"/>
+                                            <constraint firstItem="ix3-Ou-wRf" firstAttribute="top" secondItem="hIM-oe-EXA" secondAttribute="bottom" constant="21" id="41Z-9K-Jfq"/>
+                                            <constraint firstAttribute="bottom" secondItem="ix3-Ou-wRf" secondAttribute="bottom" constant="7.5" id="7SL-xK-efy"/>
+                                            <constraint firstItem="hIM-oe-EXA" firstAttribute="centerX" secondItem="e3T-Tt-U73" secondAttribute="centerX" id="QbR-II-8nO"/>
+                                            <constraint firstAttribute="trailing" secondItem="hIM-oe-EXA" secondAttribute="trailing" constant="20" id="YYr-P5-vtM"/>
+                                            <constraint firstItem="ix3-Ou-wRf" firstAttribute="leading" secondItem="e3T-Tt-U73" secondAttribute="leading" constant="15" id="lmq-NC-CRg"/>
+                                            <constraint firstItem="ix3-Ou-wRf" firstAttribute="centerX" secondItem="e3T-Tt-U73" secondAttribute="centerX" id="mKL-Tx-WBb"/>
+                                            <constraint firstAttribute="trailing" secondItem="ix3-Ou-wRf" secondAttribute="trailing" constant="15" id="u2f-BS-DUX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tz-nx-ocv" userLabel="AnswerView">
+                                        <rect key="frame" x="0.0" y="293.5" width="375" height="293.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3Q4-R6-T7P">
+                                                <rect key="frame" x="15" y="8" width="345" height="270.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-cw-MWV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="58.5"/>
+                                                        <color key="backgroundColor" red="0.25767130659999998" green="0.01142920733" blue="0.69360723349999998" alpha="0.8232983733" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                                        <state key="normal" title="A. Trinidad and Tobago">
+                                                            <color key="titleColor" red="1" green="0.97514359757613644" blue="0.95093127448828596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pG-ry-Sd2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-o6-FXa">
+                                                        <rect key="frame" x="0.0" y="70.5" width="345" height="59"/>
+                                                        <color key="backgroundColor" red="0.25767130659999998" green="0.01142920733" blue="0.69360723349999998" alpha="0.8232983733" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                                        <state key="normal" title="B. Barbados">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5m-dS-iEF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH1-go-zbp">
+                                                        <rect key="frame" x="0.0" y="141.5" width="345" height="58.5"/>
+                                                        <color key="backgroundColor" red="0.25767130659999998" green="0.01142920733" blue="0.69360723349999998" alpha="0.8232983733" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                                        <state key="normal" title="C. Saint Kitts and Nevis">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gh-fG-WLG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-UI-Pav">
+                                                        <rect key="frame" x="0.0" y="212" width="345" height="58.5"/>
+                                                        <color key="backgroundColor" red="0.25767130659999998" green="0.01142920733" blue="0.69360723349999998" alpha="0.8232983733" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                                        <state key="normal" title="D. Antigua and Barbuda">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVW-Jk-Gtx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.51372549019607838" green="0.43529411764705883" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3Q4-R6-T7P" secondAttribute="bottom" constant="15" id="LcS-aN-Q5C"/>
+                                            <constraint firstItem="3Q4-R6-T7P" firstAttribute="centerX" secondItem="6tz-nx-ocv" secondAttribute="centerX" id="NvD-fN-thJ"/>
+                                            <constraint firstItem="3Q4-R6-T7P" firstAttribute="top" secondItem="6tz-nx-ocv" secondAttribute="top" constant="7.5" id="Ope-ft-dYa"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Q4-R6-T7P" secondAttribute="trailing" constant="15" id="XY3-sX-bTQ"/>
+                                            <constraint firstItem="3Q4-R6-T7P" firstAttribute="leading" secondItem="6tz-nx-ocv" secondAttribute="leading" constant="15" id="vGh-oF-6MT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5q7-SY-lOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0na-GL-W1W"/>
+                            <constraint firstAttribute="bottom" secondItem="5q7-SY-lOQ" secondAttribute="bottom" id="Eth-zu-w04"/>
+                            <constraint firstItem="WCL-fY-giu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XN5-g3-mcr"/>
+                            <constraint firstItem="WCL-fY-giu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfn-td-vZm"/>
+                            <constraint firstItem="WCL-fY-giu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jI7-nZ-tbz"/>
+                            <constraint firstItem="WCL-fY-giu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jxe-pC-faN"/>
+                            <constraint firstAttribute="trailing" secondItem="5q7-SY-lOQ" secondAttribute="trailing" id="pCN-Xh-LAS"/>
+                            <constraint firstItem="5q7-SY-lOQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qJy-dY-aiV"/>
+                            <constraint firstItem="5q7-SY-lOQ" firstAttribute="width" secondItem="WCL-fY-giu" secondAttribute="width" id="sUT-vd-oO9"/>
+                            <constraint firstItem="5q7-SY-lOQ" firstAttribute="top" secondItem="WCL-fY-giu" secondAttribute="bottom" id="trS-sH-sdX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="graphicView" destination="hIM-oe-EXA" id="JVl-hY-ZLQ"/>
+                        <outlet property="optionA" destination="ybt-cw-MWV" id="RAc-5x-BbP"/>
+                        <outlet property="optionB" destination="pkD-o6-FXa" id="6J6-2q-3un"/>
+                        <outlet property="optionC" destination="KH1-go-zbp" id="VVq-sX-fgT"/>
+                        <outlet property="optionD" destination="hvd-UI-Pav" id="Mac-45-A41"/>
+                        <outlet property="progressView" destination="cJV-0d-IHn" id="ofd-Re-2QG"/>
+                        <outlet property="questionCounter" destination="Jpf-vO-ADL" id="eXM-eJ-Pho"/>
+                        <outlet property="questionLabel" destination="ix3-Ou-wRf" id="9ts-j3-sWu"/>
+                        <outlet property="scoreLabel" destination="ark-ru-11S" id="zqS-P2-YwG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
